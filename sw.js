@@ -1,4 +1,4 @@
-const CACHE_NAME = 'burn-in-fixer-v1';
+const CACHE_NAME = 'burn-in-fixer-v20250920-2310';
 const urlsToCache = [
     './',
     './index.html',
