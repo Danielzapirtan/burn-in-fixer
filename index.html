@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burn-in Fixer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="description" content="A PWA to help fix screen burn-in with color cycling patterns.">
+</head>
+<body>
+    <div class="container">
+        <h1>Burn-in Fixer</h1>
+        <p>Cycle through colors and patterns to help fix screen burn-in.</p>
+        <div class="controls">
+            <button id="startBtn">Start</button>
+            <button id="stopBtn" disabled>Stop</button>
+            <button id="fullscreenBtn">Toggle Fullscreen</button>
+            <select id="patternSelect">
+                <option value="solid">Solid Colors</option>
+                <option value="checkerboard">Checkerboard</option>
+                <option value="stripes">Stripes</option>
+            </select>
+            <label for="duration">Cycle Duration (ms):</label>
+            <input type="number" id="duration" value="1000" min="100" max="5000">
+            <p>Time Elapsed: <span id="timer">00:00</span></p>
+        </div>
+        <canvas id="canvas"></canvas>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
