@@ -40,7 +40,7 @@ function drawPattern() {
         const size = 50;
         for (let y = 0; y < height; y += size) {
             for (let x = 0; x < width; x += size) {
-                ctx.fillStyle = ['#ffaaaa', '#aaffaa', '#aaaaff'][Math.floor(Math.random(3))];
+                ctx.fillStyle = ['#ffaaaa', '#aaffaa', '#aaaaff'][Math.floor(Math.random() * 3)];
                 ctx.fillRect(x, y, size, size);
             }
         }
