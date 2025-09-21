@@ -37,7 +37,7 @@ function drawPattern() {
         ctx.fillStyle = colors[currentColorIndex];
         ctx.fillRect(0, 0, width, height);
     } else if (pattern === 'checkerboard') {
-        const size = 50;
+        const size = 8;
         for (let y = 0; y < height; y += size) {
             for (let x = 0; x < width; x += size) {
                 ctx.fillStyle = colors[Math.floor(Math.random() * 3)];
